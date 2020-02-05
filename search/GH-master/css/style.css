@@ -1,0 +1,178 @@
+html, body{	height: 100%; min-height: 100%; margin: 0px; padding: 0px; font-family: "Courier New";background-image: url("images/fon.png");
+background-size: 100%;
+;}
+p { margin:0px; padding:0px; }
+
+/*********************************************************************************************************/
+
+/*=============================ВСПЛЫВАЮЩИЕ ПОДСКАЗКИ======================================================*/
+#tooltip{
+	height: 100px;
+	width:300px;
+	/*z-index: 999;*/
+	background-color: rgba(0,0,0,.8);
+	position: absolute;
+/*	border-radius: 20px;*/
+/*	border: 2px white solid;*/
+}
+#tooltip_image{
+	height: 70px;
+	width: 100px;
+	margin-left: 15px;
+	margin-top: 15px;
+	/*border-radius: 20px;*/
+}
+#tooltip_text{
+	float: right;
+	text-align: left;
+	width:180px;
+}
+#tooltip_title{
+	color: white;
+	text-align: center;
+	font-size: 16px;
+}
+#tooltip_description{
+	color: white;
+	margin-left: 15px;
+	font-size: 12px;
+}
+/*========================================================================================================*/
+.icon{
+	z-index: 2;
+	position: absolute;
+	padding:0px;
+	margin:0px;
+}
+#left-menu{
+	display: inline;
+	float: left;
+	position:fixed;
+	width: 20%;
+	height: 100%;
+	z-index: 1;
+}
+#years{
+	background-color: rgba(0,0,0,.7);
+	min-height: 100%;
+	width:100%;
+	float: left;
+		display: inline;
+padding-top: 20px;
+padding-bottom: 20px;
+font-family: "Courier New";
+font-size: 38px;
+font-weight: normal;
+color: white;
+
+
+
+}
+
+#events{
+	position: fixed;
+	background-color: rgba(0,0,0,.5);
+	height: auto;
+	width:20%;
+	float: left;
+	left:20%;
+	top: 130px;
+	z-index: 999;
+	color: white;
+	font-family: Segoe Script;
+}
+
+/***************************************************MAP****************************************************/
+#map{
+opacity: 0.8;
+}
+#map-container{
+	height: 720px;
+	width:960px;
+	position: absolute;
+	right: 0px;
+}
+/* КНОПКИ СОБЫТИЙ */
+
+.sl{
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.monument{
+	height: 35px;
+	width: 35px;
+	z-index: 3;
+	position: fixed;
+	cursor:arrow;
+}
+.monument:hover{
+	cursor:pointer;
+}
+
+/****************************************** КНОПКИ С ГОДАМИ *******************************************************/
+.years{
+	outline: none; 
+	border: 0;
+	font-family: "Courier New";
+	/*color: #b7241b;
+	/*font-size: 16px;*/
+	/*padding: 10px;
+	/*border:1px black solid;*/
+	width:50%;
+	margin:0px auto 0px auto;
+	background: transparent;
+
+	///
+font-size: 40px;
+font-weight: normal;
+color: white;*/
+}
+.years:hover{
+	color: #b7241b;
+	font-weight: bold;
+	cursor: default;
+}
+.years::selection {	background-color: transparent; }
+.years::-moz-selection { background-color: transparent; }
+#left-menu p { text-align: center; }
+/********************************************************************************************************************/
+
+.show_link { cursor: hand; }
+
+
+/*************************************************SEARCH********************************************************/
+
+.search{
+	position: fixed;
+	margin-left: 900px;
+	margin-top: 20px;
+}
+#search_text{
+	height: 20px;
+	width: 300px;
+	color: white;
+	background-color: rgba(0,0,0,.5);
+	font-family: "Courier New";
+}
+#search{
+	height: 20px;
+	width: 60px;
+	position: fixed;
+	margin-left: 20px;
+	margin-top: 5px;
+}
+
+/***************************************************TITLE********************************************************/
+.title{
+	color: #b7241b;
+	font-size: 60px;
+	display: block;
+    position: fixed;
+	margin-left: 300px;
+	margin-top: 0px;
+	width: 500px;
+	letter-spacing: 5px;
+	font-weight: bold;
+	text-align: left;
+}
