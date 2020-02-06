@@ -14,9 +14,11 @@
 				<p>ИНТЕРАКТИВНЫЙ КАЛЕНДАРЬ</p>
 			</div>
 	<div id="left-menu">
-		<div class="search">
-				<input id='search_text' placeholder="Поиск" type="search"/>
-				<button type="submit" id="search">Поиск</button>						
+		<div class="search-box">
+				<input class='search_text' id="search_text" placeholder="Искать здесь..." type="search"/>
+				<a class="search-btn" href="#" id="search">
+					<img src="images/search.png" id="search" />			
+				</a>							
 			</div>
 			
 		<div id="years">			
@@ -36,10 +38,13 @@
 		</div>
 		
 	<div id='map-container'>
-		<img id="map" style="position:absolute;" src="images/mapN.png"/>
+		<img class="magniflier" id="map" style="position:absolute;" src="images/mapN.png"/>
+		<div id="GrodnoReg">
+		</div>
 		<?php include_once 'php/show_monuments.php'; ?>
 		<?php include_once 'php/search.php'; ?>
 	</div>
-	
+	<div class="footer">
+	</div>
 </body>
 </html>

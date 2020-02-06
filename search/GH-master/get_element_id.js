@@ -31,6 +31,10 @@ $(document).ready(function(){
 		});
 	});
 
+	$('body').on('click','.s1', function(){
+		$(location).attr('href','event_page.php/?type=s1&id='+this.id);	
+	});
+
 	$('body').on('click','.monument', function(){
 		$(location).attr('href','monument_page.php/?type=monument&id='+this.id);	
 	});
