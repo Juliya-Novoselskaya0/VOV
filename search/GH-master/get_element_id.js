@@ -31,12 +31,23 @@ $(document).ready(function(){
 		});
 	});
 
-	$('body').on('click','.s1', function(){
-		$(location).attr('href','event_page.php/?type=s1&id='+this.id);	
+	$('body').on('click','.sl',function(){		
+		var item_id = this.id;
+		$.ajax({
+			url: "php/show_region.php",
+			type: "POST",
+			data: ({i_id: item_id}),
+			dataType: "text",
+			success: func_success
+		});
+	});
+
+	$('body').on('click','.icon_anim', function(){
+		$(location).attr('href','event_page/event_page.php/?type=icon_anim&id='+this.id);	
 	});
 
 	$('body').on('click','.monument', function(){
-		$(location).attr('href','monument_page.php/?type=monument&id='+this.id);	
+		$(location).attr('href','monument_page/monument_page.php/?type=monument&id='+this.id);	
 	});
 
 	$('#search').bind('click',function() {

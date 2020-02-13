@@ -38,9 +38,7 @@
 		</div>
 		
 	<div id='map-container'>
-		<img class="magniflier" id="map" style="position:absolute;" src="images/mapN.png"/>
-		<div id="GrodnoReg">
-		</div>
+		<img class="magniflier" id="map" style="position:absolute;" src="images/mapNtrrrrrr.png"/>
 		<?php include_once 'php/show_monuments.php'; ?>
 		<?php include_once 'php/search.php'; ?>
 	</div>
