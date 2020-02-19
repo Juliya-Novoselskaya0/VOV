@@ -64,6 +64,15 @@ $(document).ready(function(){
 	});
 });
 
+
+
+
+
+
+
+
+
+    
 function success_get_info(data)
 {
 	$('#map-container').append(data);

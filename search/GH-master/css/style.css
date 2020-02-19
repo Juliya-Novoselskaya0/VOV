@@ -39,13 +39,13 @@ p { margin:0px; padding:0px; }
 }
 /*========================================================================================================*/
 .icon{
-	z-index: 2;
+	z-index: 15;
 	position: absolute;
 	padding:0px;
 	margin:0px;
 }
 .icon_anim{
-	z-index: 2;
+	z-index: 16;
 	position: absolute;
 	padding:0px;
 	margin:0px;
@@ -79,14 +79,17 @@ color: white;
 #events{
 	position: fixed;
 	background-color: rgba(0,0,0,.5);
-	height: auto;
-	width:20%;
+	min-height: 0px;
+	max-height: 300px;
+	overflow-y: auto;
+	width: 250px;
 	float: left;
 	left:20%;
 	top: 130px;
 	z-index: 999;
 	color: white;
 	font-family: Segoe Script;
+/*	visibility: collapse;*/
 }
 
 /***************************************************MAP****************************************************/
@@ -100,6 +103,11 @@ color: white;
 #map{
 opacity: 0.8;
 }
+
+
+
+
+
 #GrodnoReg{
 opacity: 0.7;
 position: absolute;
@@ -127,7 +135,7 @@ background: url("images/grodnoRegion.png") no-repeat;
 .monument{
 	height: 35px;
 	width: 35px;
-	z-index: 3;
+	z-index: 2;
 	position: fixed;
 	cursor:arrow;
 }
@@ -185,6 +193,10 @@ color: white;*/
 .search-box:hover > .search_btn{
 	background:white;
 }
+
+
+
+
 .search-btn{
 color:#b7241b;
 float: right;
@@ -289,4 +301,51 @@ button:before {
  
   /* Изначально скрыто */
   display: none;
+}
+
+/***********************************************POPUP******************************************************/
+/.b-container{
+    width:200px;
+    height:150px;
+    background-color: #ccc;
+    margin:0px auto;
+    padding:0px;
+    font-size:30px;
+    color: #fff;
+}
+.b-popup{
+    width:100%;
+    min-height:100%;
+    background-color: rgba(0,0,0,0.8);
+    overflow:hidden;
+    position:fixed;
+    left:0px;
+    top:0px;
+    z-index: 99;
+    align-items: center;
+  justify-content: center;
+}
+ .b-popup .b-popup-content{
+    margin:0px auto 0px auto;
+    width:100px;
+    height: 40px;
+    padding:10px;
+    z-index: 100;
+    align-items: center;
+  justify-content: center;
+}
+
+.close-btn{
+	color:#b7241b;
+float: right;
+position: fixed;
+width: 30px
+height: 30px;
+border-radius: 50%;
+display: flex;
+right: 20px;
+justify-content: center;
+align-items: center;
+text-decoration:none;
+z-index: 100;
 }

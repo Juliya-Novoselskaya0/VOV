@@ -3,6 +3,7 @@
 <head>
 	<meta charset="windows-1251">
 	<script type='text/javascript' src='js/jquery.js'></script>
+	<script type='text/javascript' src='js/close.js'></script>
 	<script type='text/javascript' src='get_element_id.js'></script>
 	<script type='text/javascript' src='get_year.js'></script>
 	<link rel="stylesheet" type="text/css" href="css/style.css"/>
@@ -13,6 +14,12 @@
 			<div class="title">
 				<p>ИНТЕРАКТИВНЫЙ КАЛЕНДАРЬ</p>
 			</div>
+
+
+			<div id="opaco" class="hidden"></div>
+<div id="popup" class="hidden"></div>
+
+
 	<div id="left-menu">
 		<div class="search-box">
 				<input class='search_text' id="search_text" placeholder="Искать здесь..." type="search"/>
