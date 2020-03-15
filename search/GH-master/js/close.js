@@ -1,6 +1,9 @@
 $(document).ready(function(){
         //Скрыть PopUp при загрузке страницы    
-        PopUpHide();
+       // PopUpHide();
+       $('#popup1').css({
+        visibility:"collapse"
+       });
     });
     //Функция отображения PopUp
     function PopUpShow(){
@@ -8,5 +11,6 @@ $(document).ready(function(){
     }
     //Функция скрытия PopUp
     function PopUpHide(){
-        $("#popup1").hide();
+      //  document.getElementById('popup1').remove()
+                $('#popup1').remove();
     }

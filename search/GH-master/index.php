@@ -16,9 +16,9 @@
 			</div>
 
 
-			<div id="opaco" class="hidden"></div>
-<div id="popup" class="hidden"></div>
-
+			<!--<div id="opaco" class="hidden"></div>
+<div id="popup1" class="hidden"></div>
+-->
 
 	<div id="left-menu">
 		<div class="search-box">

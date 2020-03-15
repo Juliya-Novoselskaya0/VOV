@@ -9,8 +9,8 @@
 		echo fgets($fd);
 	}
 	echo '<style>
-	html, body{	height: 100%; min-height: 100%; margin: 0px; padding: 0px; font-family: "Courier New";background-image: url("images/fon.png");
-background-size: 100%;}
+	html, body{	height: 100%; min-height: 100%; margin: 0px; padding: 0px; font-family: "Courier New";background-size: 100%
+	 background-image: url("../images/fon.png")}
 	#tool{
 	height:100px;
 	weight:100px;

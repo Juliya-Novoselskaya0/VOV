@@ -42,13 +42,14 @@ $(document).ready(function(){
 		});
 	});
 
-	$('body').on('click','.icon_anim', function(){
+	$('body').on('click','.icon', function(){
 		$(location).attr('href','event_page/event_page.php/?type=icon_anim&id='+this.id);	
 	});
 
 	$('body').on('click','.monument', function(){
 		$(location).attr('href','monument_page/monument_page.php/?type=monument&id='+this.id);	
 	});
+
 
 	$('#search').bind('click',function() {
 		$('.monument').remove();
@@ -80,11 +81,13 @@ function success_get_info(data)
 function success_search(data)
 {
 	$('#map-container').append(data);
+	$('.icon').addClass('b');
 };
 function func_success(data)
 {
 	$('.icon').remove();
 	$('#map-container').append(data);
+	$('.icon').addClass('b');
 };
 function func_2(data)
 {
